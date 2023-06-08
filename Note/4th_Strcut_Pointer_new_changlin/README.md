@@ -131,6 +131,7 @@ int* pointer (int size){
 
 ## Struct 
 there ar multiple methods to modify the elements of a strcut in C++
+
 - Dot anotaion
 ```C++
 struct Person{
@@ -145,8 +146,37 @@ int main(){
     person1.age = 22;
     person1.weght = 150;
 
-    co
+
 }
+```
+- Arrow notation: If you have a pointer to a struct, you can use the arrow notation (->) to access and modify its members. For example:
+
+```C++
+#include <iostream>
+#include <cstring>
+using namespace std;
+struct Person{
+    string name;
+    int age;
+    int weight;
+};
+
+int main(){
+
+    Person* person2 = new Person;
+    person2->name = "Laura";
+    (*person2).age = 25;
+
+
+    return 0;
+
+}
+```
+- strcu assignment
+```C++
+    Person* person3 = new Person;
+    *person3 = { "John", 25 };
+    delete person3;
 ```
 
 

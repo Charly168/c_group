@@ -204,6 +204,7 @@ int main(){
 // char* getname(){
 
 
+
 //     char * pn = new char[20];
 
 //     cin.getline(pn, 20);//这时候返回就不能是*pn,因为*pn是一个值而不是指针,我么的函数定义为char*返回指针类型
