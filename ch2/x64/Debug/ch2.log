@@ -1,9 +1,0 @@
-﻿  12.cpp
-  3.cpp
-  4.cpp
-  7.cpp
-  5.cpp
-C:\Users\cyc\source\repos\6cyc6\c_group\ch2\5.cpp(17,17): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
-  6.cpp
-  正在生成代码...
-  ch2.vcxproj -> C:\Users\cyc\source\repos\6cyc6\c_group\ch2\x64\Debug\ch2.exe
