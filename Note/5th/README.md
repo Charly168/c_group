@@ -135,7 +135,7 @@ In the classs we have also dicussed the using of those types.
 In C :Getchar(),putchat() are used to accept or print a INT number
 IN C++: cin.get(),cout.put() are used to accept or print a CHAR character.
 
-More than that, you show know that, cin.get(char) can return a **Object**, but cin.get() returns a CHAR.
+More than that, you show know that, cin.get(char) and "cin "can return a **Object**, but cin.get() returns a CHAR.
 
 ## set up aliasingname
 #define ALIASING_NAME typename or(typename *)
