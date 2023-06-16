@@ -23,12 +23,6 @@ int main(){
         cout << str;
     }
     inFile.close();
-
-
-
     
-    
-
-
     return 0 ;
 }

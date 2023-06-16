@@ -12,25 +12,25 @@
     
 //     char ch;
 //     cin >> ch;
-    // if (ch == 'y' || ch == 'Y')
-    //     cout << "You were warned! \a\a\n";
-    // else if (ch =='n' || ch == 'N')
-    //     cout << "A wise chioce ... bye\n";
-    // else
-    // cout << "That wasn't a y or n! Apparently you"
-    //     "can't follow\n instrctions,so"
-    //     "I'll trashp your disk anyway.\a\a\a\n";
+//     if (ch == 'y' || ch == 'Y')
+//         cout << "You were warned! \a\a\n";
+//     else if (ch =='n' || ch == 'N')
+//         cout << "A wise chioce ... bye\n";
+//     else
+//     cout << "That wasn't a y or n! Apparently you"
+//         "can't follow\n instrctions,so"
+//         "I'll trashp your disk anyway.\a\a\a\n";
 
 
-    // if (ch == 'y' || ch == 'Y'){
-    //     cout << "You were warned! \a\a\n";
-    //     if (ch =='n' || ch == 'N')
-    //     cout << "A wise chioce ... bye\n";}
-    // else
-    // cout << "That wasn't a y or n! Apparently you"
-    //     "can't follow\n instrctions,so"
-    //     "I'll trashp your disk anyway.\a\a\a\n";
-    // return 0;
+//     if (ch == 'y' || ch == 'Y'){
+//         cout << "You were warned! \a\a\n";
+//         if (ch =='n' || ch == 'N')
+//         cout << "A wise chioce ... bye\n";}
+//     else
+//     cout << "That wasn't a y or n! Apparently you"
+//         "can't follow\n instrctions,so"
+//         "I'll trashp your disk anyway.\a\a\a\n";
+//     return 0;
 // }
 
 using namespace std;
