@@ -4,6 +4,7 @@
         "iostream": "cpp",
         "new": "cpp",
         "cstring": "cpp",
-        "cstdio": "cpp"
+        "cstdio": "cpp",
+        "array": "cpp"
     }
 }
