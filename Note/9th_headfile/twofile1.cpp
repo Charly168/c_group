@@ -7,6 +7,7 @@ int dick = 30;
 static int harry = 300; // static, internal linkage
 // function prototype
 void remote_access();
+
 int main()
 {
 using namespace std;
