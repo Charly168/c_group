@@ -13,10 +13,13 @@ public:
         return &Student::name;
     }
 
+    const int source = 20;
+
     void show(){
 
         cout << "name: " << name <<endl;
         cout << "age: " << age <<endl;
+        cout << "source: " << source <<endl;
     }
 
 };
@@ -30,6 +33,7 @@ int main(){
     pstu->name = "yichen";
     pstu->age = 26;
     pstu->show();
+    // cout << pstu->source;
 
     cout << endl;
 
@@ -37,6 +41,8 @@ int main(){
     pstr = &Student::name;
     stu.*pstr = "changlin";
     pstu->show();
+
+    const string Student:: *pdata = Student::data();
 
 
 
