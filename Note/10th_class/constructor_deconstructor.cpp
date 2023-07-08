@@ -13,10 +13,10 @@ public:
 
     const int m_source = 20;
 
-    Student(string name){
+    Student(){
 
         cout << "Initialize the value of member: " << endl;
-        m_name = name;
+        m_name = "changlin";
         m_age = 25;
         cout << "name: " << m_name <<endl;
         cout << "age: " << m_age << endl;
@@ -35,7 +35,7 @@ int main(){
 
     // struct Student stu = {"Changlin",25};
     // struct Student *pstu = &stu;
-    Student stu("yichen");
+    Student stu;
     stu.m_height = 169;
     stu.m_weight = 130;
     stu.show();
