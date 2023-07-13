@@ -10,10 +10,8 @@ public:
 
     Person& add(Person &p)
     {
-        Person* temp = new Person(5);
         this->age += p.age;
-        temp->age = this->age;
-        return *temp;
+        return *this;
     }
 
 public:
