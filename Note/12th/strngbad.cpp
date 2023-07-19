@@ -14,7 +14,6 @@ StringBad::StringBad(const char*s){
     cout << num_strings << ": \"" << str <<"\" objecet created\n";
 }
 
-
 StringBad::StringBad(){
     len = 4;
     str = new char[4];
@@ -22,6 +21,19 @@ StringBad::StringBad(){
     num_strings++;
 
     cout << num_strings << ": \"" << str <<"\" default objecet created\n";
+}
+
+// StringBad::StringBad(const StringBad &s){
+//     num_strings ++;
+// }
+
+StringBad::StringBad(const StringBad& st){
+    num_strings ++;
+    len = st.len;
+    str = new char [len+1];
+    std::strcpy(str,st.str);
+    cout << num_strings << ": \"" << str
+         << "\" object created\n  ";
 }
 
 StringBad::~StringBad(){
@@ -36,5 +48,15 @@ std::ostream & operator << (std::ostream& os, const StringBad & st){
 
     os << st.str;
     return os;
+}
+
+StringBad & StringBad::operator= (const StringBad & st){
+    if (this ==&st)
+        return *this;
+    delete [] str;
+    len = st.len;
+    str = new char[len+10];
+    std::strcpy(str,st.str);
+    return *this;
 }
 
