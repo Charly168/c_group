@@ -42,6 +42,7 @@ public:
     StringBad& operator= (const StringBad &s);
     ~StringBad(){
         cout << "object deleted \n";
+        
         if(this->str != nullptr)
             {delete [] str;
             this->str = nullptr;}
