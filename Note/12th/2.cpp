@@ -2,98 +2,101 @@
 #include <cstring>
 using namespace std;
 
-class StringBad{
+class StringBad
+{
 public:
     void show()
-{
-     printf( " %s\n",this->str);
-}
+    {
+        printf(" %s\n", this->str);
+    }
 
 private:
-    char *str ;
+    char *str;
 
 public:
-    StringBad(){
-    str  = nullptr;
-    // str = new char[4];
-    // strcpy(str,"C++");
-    cout << str << "defalut \n";
-
+    StringBad()
+    {
+        this->str = nullptr;
+        // str = new char[4];
+        // strcpy(str,"C++");
+        cout << "defalut \n";
     };
 
-
-    StringBad(const char *s){
+    StringBad(const char *s)
+    {
         int size = strlen(s);
-        this->str = new char[size+1];
-        strcpy(str,s);
-        cout << str << "object created\n" ;
-
+        this->str = new char[size + 1];
+        strcpy(str, s);
+        cout << str << " object created\n";
     }
-    
-    StringBad(const StringBad & s){
+
+    StringBad(const StringBad &s)
+    {
         this->str = new char[strlen(s.str) + 1];
-        strcmp(this->str,s.str);
+        strcmp(this->str, s.str);
         cout << s.str << "referenced \n";
-
     }
 
-    friend  ostream & operator << (ostream& os,StringBad & obj);
+    friend ostream &operator<<(ostream &os, StringBad &obj);
 
-    StringBad& operator= (const StringBad &s);
-    ~StringBad(){
+    StringBad &operator=(const StringBad &s);
+
+    ~StringBad()
+    {
         cout << "object deleted \n";
-        
-        if(this->str != nullptr)
-            {delete [] str;
-            this->str = nullptr;}
+
+        if (this->str != nullptr)
+        {
+            delete this->str;
+            this->str = nullptr;
+        }
     }
 };
 
-void test(const StringBad & s){
-    StringBad st2 = s;
-    
-    StringBad st3 = StringBad(s);
-    StringBad st4 ;
-    // st4 = s;
-}
+StringBad &StringBad::operator=(const StringBad &s)
+{
 
-StringBad&  StringBad::operator  = (const StringBad & s){
+    if (this->str != nullptr)
+    {
+        delete this->str;
+        this->str = nullptr;
+    }
 
-        if(this->str != nullptr)
-            {delete [] str;
-            this->str = nullptr;}
+    this->str = new char[strlen(s.str) + 1];
+    strcmp(this->str, s.str);
+    cout << s.str << "== called \n";
 
-        this->str = new char[strlen(s.str) + 1];
-        strcmp(this->str,s.str);
-        cout << s.str << "== called \n";
+    return *this;
+};
 
-        return *this;
-        
-    };  
-ostream& operator << (ostream& os, StringBad & s){
+ostream &operator<<(ostream &os, StringBad &s)
+{
 
     os << s.str;
     return os;
-
 }
 
+void test(const StringBad &s)
+{
+    StringBad st2 = s;
 
+    StringBad st3 = StringBad(s);
+    StringBad st4;
+    // st4 = s;
+}
 
-int main(){
+int main()
+{
 
     StringBad st("I am a boy");
-    // std::cout << st << std::endl;// 
+    // std::cout << st << std::endl;//
     // StringBad st1(st);
     // test(st);
     StringBad st2("I am a girl");
     st2 = st;
     StringBad st3;
 
-    
-    
     // StringBad* st4 = new StringBad(st);
-
 
     return 0;
 }
-
