@@ -15,16 +15,21 @@ private:
 public:
     StringBad(){
     str  = nullptr;
-    // str = new char[4];
-    // strcpy(str,"C++");
+    str = new char[4];
+    strcpy(str,"C++");
     cout << str << "defalut \n";
 
     };
-
+// char *str[5]
+// char (*str)[6]
+// char *
+//char [], char arr[]
 
     StringBad(const char *s){
         int size = strlen(s);
         this->str = new char[size+1];
+        
+        this->str = new char;
         strcpy(str,s);
         cout << str << "object created\n" ;
 
@@ -42,10 +47,11 @@ public:
     StringBad& operator= (const StringBad &s);
     ~StringBad(){
         cout << "object deleted \n";
-        
         if(this->str != nullptr)
-            {delete [] str;
-            this->str = nullptr;}
+            // {delete [] str;
+            // this->str = nullptr;}
+            // delete [] this->str;
+            delete this->str;
     }
 };
 
