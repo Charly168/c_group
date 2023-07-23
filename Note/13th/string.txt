@@ -1,0 +1,36 @@
+1.
+StringBad
+a. 初始化一个对象
+b. 对对象进行计数
+c. 每删除一个对象,计数--
+d. 打印内容
+
+
+2. 士兵打枪
+士兵拿了ak47
+士兵开火
+士兵装子弹
+枪装填子弹
+枪发射
+
+
+士兵:
+枪;自带子弹数量;名字
+开火,填装,
+
+枪:
+名字,子弹
+子弹++,发射
+
+
+int ,char, double,String
+int *str = new int[]
+
+char *pc = new *char //char[]
+char (*pc)[]
+delete pc
+
+char *pc = new *char[] // char[][]
+char *pc[]
+delete [] pc
+

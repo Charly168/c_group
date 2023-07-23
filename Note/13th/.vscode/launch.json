@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "g++ - gebug",
+            "request": "launch",
+            "type": "cppdbg",
+            "program": "${workspaceFolder}/build/pro",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "for gdb printing",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "Build",
+            "miDebuggerPath": "/usr/bin/gdb"
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+/usr/bin/c++   -g -o2  -rdynamic CMakeFiles/pro.dir/main_soilder_gun.cpp.o CMakeFiles/pro.dir/src/gun.cpp.o CMakeFiles/pro.dir/src/soilder.cpp.o  -o pro 

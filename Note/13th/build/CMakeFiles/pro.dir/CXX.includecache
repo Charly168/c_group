@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/gun.h
+iostream
+-
+
+../include/soilder.h
+iostream
+-
+gun.h
+../include/gun.h
+
+/home/charly/Documents/C++/c_group/Note/13th/main_soilder_gun.cpp
+iostream
+-
+soilder.h
+/home/charly/Documents/C++/c_group/Note/13th/soilder.h
+
