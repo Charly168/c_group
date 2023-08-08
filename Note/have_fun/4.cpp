@@ -6,8 +6,6 @@
 std::vector<int> children = {1,2,4,2,6};
 std::vector<int> cookies = {1,4,3,2,5};
 int count(std::vector<int>&a,std::vector<int>&b);
-int count(std::vector<int>* a,std::vector<int>* b);
-
 int main(){
     int num;
     num = count(children,cookies);
